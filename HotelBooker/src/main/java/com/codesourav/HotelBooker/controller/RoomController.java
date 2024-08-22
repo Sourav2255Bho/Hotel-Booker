@@ -53,6 +53,7 @@ public class RoomController {
 
     @GetMapping("/types")
     public List<String> getRoomTypes(){
+        System.out.println("in room types");
         return roomService.getAllRoomTypes();
     }
 
